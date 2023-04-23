@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package guia5;
+package guia6;
 
 /**
  *
  * @author nico
  */
-public class Guia5 {
+public class Guia6 {
 
     /**
      * @param args the command line arguments
