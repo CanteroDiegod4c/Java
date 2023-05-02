@@ -6,6 +6,8 @@
 
 package Entidad;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Kroban
@@ -15,14 +17,23 @@ package Entidad;
  */
 public class Empleado {
     
+Scanner input = new Scanner(System.in);
+
 private String nombre;
 private int edad;
 private double salario;
 
     public Empleado(String nombre, int edad, double salario) {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.salario = salario;
+        System.out.println("Ingrese nombre");
+        this.nombre = input.nextLine();
+        
+        System.out.println("");
+        System.out.println("Ingrese edad ");
+        this.edad = input.nextInt();
+        
+        System.out.println("");
+        System.out.println("Ingrese salario actual");
+        this.salario = input.nextDouble();
     }
 
     public Empleado() {
@@ -52,5 +63,22 @@ private double salario;
         this.salario = salario;
     }
 
-
+public void calcularAumento(){
+    double aumento, calc;
+    
+    if(getEdad() < 30){
+        aumento = (getSalario() * 0.05);
+        calc =  aumento + getSalario();
+    
+        System.out.println("el aumento es de " + aumento);
+        System.out.println("El total sería de " + calc);
+    }else if(getEdad() > 30){
+        aumento = (getSalario() * 0.10);
+        calc =  aumento + getSalario();
+    
+        System.out.println("el aumento es de " + aumento);
+        System.out.println("El total sería de " + calc);
+    }
+    
+}
 }
