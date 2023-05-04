@@ -11,8 +11,7 @@ Scanner input = new Scanner(System.in);
 Calculadora c1 = new Calculadora();
 
 int num1, num2;
-boolean salir = false;
-int checkSalir = 0;
+
 
     System.out.println("Ingrese el primer número");
     num1 = input.nextInt();

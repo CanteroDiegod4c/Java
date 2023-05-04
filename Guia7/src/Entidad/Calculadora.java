@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package Entidad;
-import java.util.Scanner;
+
 
 /**
 Crear una clase llamada Operacion que tenga como atributos privados numero1 y numero2. A continuación, se deben crear los siguientes métodos:

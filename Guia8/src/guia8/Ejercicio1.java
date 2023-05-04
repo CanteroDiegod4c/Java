@@ -4,18 +4,28 @@
  * and open the template in the editor.
  */
 package guia8;
+import Entidad.CuentaBancaria;
+import Servicios.CuentaBancariaServicio;
 
 /**
  *
  * @author USUARIO
  */
-public class Guia8 {
+public class Ejercicio1 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        CuentaBancariaServicio cbs = new CuentaBancariaServicio();
+        
+        CuentaBancaria usuario = cbs.crearCuenta();
+        
+        
+        System.out.println(usuario.usuario + usuario.dniCliente + usuario.numeroCuenta);
     }
+    
+   
     
 }

@@ -73,23 +73,16 @@ public void dibujarRectangulo(){
       
       for(int i = 0; i < val1; i++){
           for(int j = 0; j < val2; j++){
-              
-                  matriz[i][j] = "   ";    
+              if( i == 0 || i == val1-1 || j == 0 || j == val2-1){
+                  matriz[i][j] = "-- ";
 
-     
+              }else{
+                  matriz[i][j] = "   ";
+              }
+
           }
           
       }
-      
-      for(int i = 0; i < val1 ; i++){
-          for(int j = 0; j < val2; j++){
-               if( i == 0 || i == val1-1 || j == 0 || j == val2-1){
-                  matriz[i][j] = "-- ";
-
-              }
-          }
-      }
-      
       for(int i = 0; i < val1 ; i++){
           for(int j = 0; j < val2; j++){
                   System.out.print(matriz[i][j]);
