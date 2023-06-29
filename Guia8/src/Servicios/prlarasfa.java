@@ -4,23 +4,15 @@
  * and open the template in the editor.
  */
 
-package practicas;
-
-import Entidad.ArrayReales;
-import Interfaces.Estadisticas;
+package Servicios;
 
 /**
  *
  * @author Kroban
  */
-public class a1 {
-public static void main(String[] args){
+public class prlarasfa {
 
-ArrayReales a1 = new ArrayReales();
+    }
 
 
-a1.minimo();
-a1.maximo();
-a1.sumatorio();
-}
 }
