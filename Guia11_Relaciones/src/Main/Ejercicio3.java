@@ -2,7 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Entidad;
+package Main;
+
+import Entidad.Perro;
+import Entidad.Persona;
+import Service.PerroService;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
 
     /**
      * Realizar un programa para que una Persona pueda adoptar un Perro. Vamos a contar de dos
@@ -22,58 +29,35 @@ personas con sus respectivos perros.
      * @param args the command line arguments
      */
 
-public class Perro {
- 
-    private String nombre, raza;
-    private Integer edad;
-    private Double tamaño;
+public class Ejercicio3 {
+    public static void main(String[] args) {
+        
+        ArrayList<Persona> personL = new ArrayList();
+        ArrayList<Perro> pL = new ArrayList();
+        Iterator it = personL.iterator();
+        Scanner input = new Scanner(System.in);
+        PerroService ps = new PerroService();
+        
+        ps.crearPerro(pL);
+        ps.crearPerro(pL);
+        ps.crearPerro(pL);
+        ps.crearPerro(pL);
+        ps.crearPerro(pL);
+        
+        
+        
+        for(Persona persona : personL){
+            System.out.println(persona.getNombre() + " Cual perro desea adoptar? ");
+            
+                for(Perro perro : pL){
+                    System.out.println("Perro " + perro.getNombre() + " ? ");
+                    String perroAdoptar = input.nextLine();
+                        if(perroAdoptar != null){
+                            
+                        }
+                }
 
-    public Perro() {
+        }
+        
     }
-
-    public Perro(String nombre, String raza, Integer edad, Double tamaño) {
-        this.nombre = nombre;
-        this.raza = raza;
-        this.edad = edad;
-        this.tamaño = tamaño;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getRaza() {
-        return raza;
-    }
-
-    public void setRaza(String raza) {
-        this.raza = raza;
-    }
-
-    public Integer getEdad() {
-        return edad;
-    }
-
-    public void setEdad(Integer edad) {
-        this.edad = edad;
-    }
-
-    public Double getTamaño() {
-        return tamaño;
-    }
-
-    public void setTamaño(Double tamaño) {
-        this.tamaño = tamaño;
-    }
-
-    @Override
-    public String toString() {
-        return "Perro{" + "nombre=" + nombre + ", raza=" + raza + ", edad=" + edad + ", tamaño=" + tamaño + '}';
-    }
-    
-    
 }
