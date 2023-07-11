@@ -14,7 +14,7 @@ public class Persona {
     private Integer documento, edad;
     private Perro perro;
 
-    public Persona() {
+    public Persona(String pepe, String pesca, int par, int par1, Perro p1) {
     }
 
     public Persona(String nombre, String apellido, Integer documento, Integer edad) {

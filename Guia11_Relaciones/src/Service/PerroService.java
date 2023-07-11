@@ -37,7 +37,8 @@ public class PerroService {
     }
     
     public void crearPersona(ArrayList personaLista){
-        Persona persona = new Persona();
+        Perro p1 = null;
+        Persona persona = new Persona("pepe", "pesca", 52525, 25, p1);
         System.out.println("NOMBRE");
         persona.setNombre(input.nextLine());
         
