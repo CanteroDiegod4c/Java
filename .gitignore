@@ -1,0 +1,4 @@
+# Carpetas de Eclipse que no van
+.metadata/
+bin/
+.settings/
